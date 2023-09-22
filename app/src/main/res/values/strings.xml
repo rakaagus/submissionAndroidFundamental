@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">submissionAndroidFundamental</string>
+    <string name="searchbar_hint">Cari Username</string>
+    <string name="user_image_description">Deskripsi Nama</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="total_dummy">20</string>
+    <string name="followers">%1$s Followers</string>
+    <string name="following">%1$s Followings</string>
+    <string name="coba_followers">%1$s</string>
+    <string name="coba_following">%1$s</string>
+    <string name="bio">Bio User</string>
+    <string name="company">company: %1$s</string>
+    <string name="location">location: %1$s</string>
+    <string name="gmail">gmail: %1$s</string>
+    <string name="twitter">twitter: %1$s</string>
+
+    <!--Title Of Page-->
+    <string name="FavUserActivity">Favorite User Activity</string>
+    <string name="SettingAppActivity">Setting App Activity</string>
+    <string name="MainActivity">MainActivity</string>
+
+    <string name="tab_text_1">Followers</string>
+    <string name="tab_text_2">Following</string>
+    <string name="username">username</string>
+    <string name="followers_text">Followers</string>
+    <string name="following_text">Followers</string>
+    <string name="darkmode">Dark Mode</string>
+</resources>

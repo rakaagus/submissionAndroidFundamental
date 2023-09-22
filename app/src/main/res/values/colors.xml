@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="main_color">#F2F2F2</color>
+
+    <color name="gray">#607D8B</color>
+    <color name="gray_light">#B0BEC5</color>
+    <color name="gray_dark">#455A64</color>
+    <color name="orange">#FF5722</color>
+    <color name="orange_light">#FFAB91</color>
+    <color name="orange_dark">#E64A19</color>
+    <color name="colorSubtitle">#757575</color>
+
+
+    <!--Github Collor-->
+    <color name="github_black">#24292e</color>
+    <color name="github_light_black">#2b3137</color>
+    <color name="github_dark_white">#fafbfc</color>
+    <color name="github_light_white">#ffffff</color>
+    <color name="github_blue">#5A73F6</color>
+    <color name="github_blue_dark">#8493B5</color>
+    <color name="github_orange">#c9510c</color>
+    <color name="github_gray">#607D8B</color>
+
+    <color name="GreyNoBackground">#E8E8E8</color>
+    <color name="tranparant">#00000000</color>
+    <color name="border_calender">#DEDEDE</color>
+</resources>

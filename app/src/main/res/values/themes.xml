@@ -1,0 +1,85 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.SubmissionAndroidFundamental" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <item name="colorPrimary">@color/github_blue</item>
+        <item name="colorPrimaryVariant">@color/github_blue</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Secondary Brand Color -->
+        <item name="colorSecondary">@color/github_blue</item>
+        <item name="colorSecondaryVariant">@color/white</item>
+        <item name="colorOnSecondary">@color/github_blue</item>
+
+        <item name="android:statusBarColor" tools:targetApi="1">?attr/colorPrimaryVariant</item>
+    </style>
+
+    <style name="view">
+        <item name="android:background">@color/GreyNoBackground</item>
+    </style>
+
+    <style name="itemSide">
+        <item name="android:background">@color/github_blue</item>
+    </style>
+
+    <style name="FollowItemColor">
+        <item name="android:background">@drawable/bg_detail_follow</item>
+    </style>
+
+    <style name="CardItem">
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="FabColor">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:backgroundTint">@color/white</item>
+    </style>
+
+    <style name="TabLayout">
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="tabTextColor">@color/black</item>
+        <item name="tabIndicatorColor">@color/github_blue</item>
+        <item name="tabSelectedTextColor">@color/black</item>
+    </style>
+
+    <style name="shapeAppreaceOverlay.App.CornerSize10Percent" parent="">
+        <item name="cornerSize">10%</item>
+    </style>
+
+    <style name="HeadlineMedium">
+        <item name="android:textAppearance">@style/TextAppearance.Material3.HeadlineMedium</item>
+    </style>
+
+    <style name="HeadlineMedium.Bold">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TitleMedium">
+        <item name="android:textAppearance">@style/TextAppearance.Material3.TitleMedium</item>
+    </style>
+
+    <style name="BodyMedium">
+        <item name="android:textAppearance">@style/TextAppearance.Material3.BodyMedium</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="BodyMedium.White">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="BodyMedium.Gray">
+        <item name="android:textColor">@color/colorSubtitle</item>
+    </style>
+
+    <style name="TitleMedium.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="BodyMedium.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Theme.SubmissionAndroidFundamental" parent="Base.Theme.SubmissionAndroidFundamental" />
+</resources>

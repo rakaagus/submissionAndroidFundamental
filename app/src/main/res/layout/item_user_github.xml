@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="4dp"
+    app:cardMaxElevation="4dp"
+    app:cardUseCompatPadding="true"
+    android:id="@+id/item_root">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        style="@style/CardItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            style="@style/itemSide"
+            android:id="@+id/view"
+            android:layout_width="7dp"
+            android:layout_height="100dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_avatar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="32dp"
+            android:contentDescription="@string/user_image_description"
+            android:src="@drawable/dummy_avatar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/view"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            style="@style/HeadlineMedium.Bold"
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/searchbar_hint"
+            android:textSize="16sp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/img_avatar"
+            app:layout_constraintStart_toEndOf="@+id/img_avatar"
+            app:layout_constraintTop_toTopOf="@+id/img_avatar" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
