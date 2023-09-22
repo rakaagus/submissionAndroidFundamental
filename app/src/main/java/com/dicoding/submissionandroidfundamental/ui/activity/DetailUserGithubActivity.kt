@@ -18,6 +18,7 @@ import com.dicoding.submissionandroidfundamental.data.local.entity.UserGithubEnt
 import com.dicoding.submissionandroidfundamental.ui.viewModels.DetailUserGithubViewModel
 import com.dicoding.submissionandroidfundamental.ui.viewModels.ThemeViewModel
 import com.dicoding.submissionandroidfundamental.ui.viewModels.ViewModelFactory
+import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.tabs.TabLayoutMediator
 
 class DetailUserGithubActivity : AppCompatActivity(), View.OnClickListener {
@@ -72,6 +73,12 @@ class DetailUserGithubActivity : AppCompatActivity(), View.OnClickListener {
 
         supportActionBar?.elevation = 0f
         detailUserGithubViewModel.getDetailUser(username.toString())
+
+        detailUserGithubViewModel.snackbarText.observe(this){
+            it.getContentIfNotHandled()?.let {snackbarText ->
+                Snackbar.make(window.decorView.rootView, snackbarText, Snackbar.LENGTH_SHORT).show()
+            }
+        }
 
         detailUserGithubViewModel.isLoading.observe(this){
             showLoading(it)

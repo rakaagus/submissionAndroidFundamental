@@ -10,6 +10,7 @@ import com.dicoding.submissionandroidfundamental.data.local.entity.UserGithubEnt
 import com.dicoding.submissionandroidfundamental.data.remote.response.DetailUserResponse
 import com.dicoding.submissionandroidfundamental.data.remote.response.GithubUsers
 import com.dicoding.submissionandroidfundamental.data.remote.retrofit.ApiConfig
+import com.dicoding.submissionandroidfundamental.util.Event
 import kotlinx.coroutines.launch
 import retrofit2.Call
 import retrofit2.Callback
@@ -22,18 +23,23 @@ class DetailUserGithubViewModel(private val mUserRepository: UserGithubRepositor
     private val _detailDataUserGithub = MutableLiveData<DetailUserResponse>()
     val detailDataUserGithub: LiveData<DetailUserResponse> = _detailDataUserGithub
 
+    private val _snackbarText = MutableLiveData<Event<String>>()
+    val snackbarText: LiveData<Event<String>> = _snackbarText
+
     companion object {
         const val TAG = "DetailUserGithubViewModel"
     }
 
     fun insertUserFav(githubEntity: UserGithubEntity){
         viewModelScope.launch {
+            _snackbarText.value = Event("Berhasil Memasukan Fav User")
             mUserRepository.insertUser(githubEntity)
         }
     }
 
     fun deleteUserFav(username: String){
         viewModelScope.launch {
+            _snackbarText.value = Event("Berhasil menghapus Fav User")
             mUserRepository.deleteFavUser(username)
         }
     }
