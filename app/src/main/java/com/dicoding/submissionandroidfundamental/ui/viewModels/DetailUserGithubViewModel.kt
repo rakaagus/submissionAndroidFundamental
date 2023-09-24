@@ -8,7 +8,6 @@ import androidx.lifecycle.viewModelScope
 import com.dicoding.submissionandroidfundamental.data.UserGithubRepository
 import com.dicoding.submissionandroidfundamental.data.local.entity.UserGithubEntity
 import com.dicoding.submissionandroidfundamental.data.remote.response.DetailUserResponse
-import com.dicoding.submissionandroidfundamental.data.remote.response.GithubUsers
 import com.dicoding.submissionandroidfundamental.data.remote.retrofit.ApiConfig
 import com.dicoding.submissionandroidfundamental.util.Event
 import kotlinx.coroutines.launch

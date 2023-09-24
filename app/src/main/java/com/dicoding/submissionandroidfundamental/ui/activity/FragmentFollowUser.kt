@@ -18,13 +18,6 @@ class FragmentFollowUser : Fragment() {
 
     private val fragmentFollowUserViewModel by viewModels<FragmentFollowUserViewModel>()
 
-
-    companion object{
-        const val ARG_POSITION = "arg_position"
-        const val ARG_USERNAME = "arg_username"
-        const val TAG = "FragmentFollowUser"
-    }
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -76,6 +69,12 @@ class FragmentFollowUser : Fragment() {
 
     private fun showLoading(isLoading: Boolean) {
         binding.progressBar.visibility = if (isLoading) View.VISIBLE else View.GONE
+    }
+
+    companion object{
+        const val ARG_POSITION = "arg_position"
+        const val ARG_USERNAME = "arg_username"
+        const val TAG = "FragmentFollowUser"
     }
 
 }

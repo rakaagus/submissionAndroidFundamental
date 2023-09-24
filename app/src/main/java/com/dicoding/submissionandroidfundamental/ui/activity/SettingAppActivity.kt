@@ -2,18 +2,10 @@ package com.dicoding.submissionandroidfundamental.ui.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.Window
-import android.view.WindowManager
 import android.widget.CompoundButton
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatDelegate
-import androidx.core.content.ContextCompat
-import androidx.lifecycle.ViewModelProvider
-import com.dicoding.submissionandroidfundamental.R
-import com.dicoding.submissionandroidfundamental.data.SettingsPreferences
-import com.dicoding.submissionandroidfundamental.data.dataStore
 import com.dicoding.submissionandroidfundamental.databinding.ActivitySettingAppBinding
-import com.dicoding.submissionandroidfundamental.ui.viewModels.DetailUserGithubViewModel
 import com.dicoding.submissionandroidfundamental.ui.viewModels.ThemeViewModel
 import com.dicoding.submissionandroidfundamental.ui.viewModels.ViewModelFactory
 

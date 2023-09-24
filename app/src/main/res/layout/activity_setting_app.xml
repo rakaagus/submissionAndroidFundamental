@@ -12,6 +12,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:foregroundGravity="top"
+        android:contentDescription="@string/fab_tombol_back"
         app:fabSize="normal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -54,6 +55,7 @@
         <com.google.android.material.imageview.ShapeableImageView
             android:layout_width="34dp"
             android:layout_height="34dp"
+            android:contentDescription="@string/image_dark_mode"
             android:src="@drawable/ic_setting_theme"
             app:shapeAppearanceOverlay="@style/shapeAppreaceOverlay.App.CornerSize10Percent" />
 

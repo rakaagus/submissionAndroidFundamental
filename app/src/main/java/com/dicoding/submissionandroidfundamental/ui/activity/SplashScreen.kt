@@ -1,10 +1,10 @@
 package com.dicoding.submissionandroidfundamental.ui.activity
 
 import android.content.Intent
-import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import android.os.Looper
 import android.view.Window
 import android.view.WindowManager
 import androidx.activity.viewModels
@@ -41,7 +41,7 @@ class SplashScreen : AppCompatActivity() {
             else window.statusBarColor = ContextCompat.getColor(this@SplashScreen, R.color.white)
         }
 
-        Handler().postDelayed(
+        Handler(Looper.getMainLooper()).postDelayed(
             {
                 val intent = Intent(this@SplashScreen, MainActivity::class.java)
                 startActivity(intent)

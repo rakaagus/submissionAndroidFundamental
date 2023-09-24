@@ -3,12 +3,8 @@ package com.dicoding.submissionandroidfundamental.ui.activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.Window
-import android.view.WindowManager
 import androidx.activity.viewModels
-import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.dicoding.submissionandroidfundamental.R
 import com.dicoding.submissionandroidfundamental.adapter.ListUserAdapter
 import com.dicoding.submissionandroidfundamental.data.remote.response.GithubUsers
 import com.dicoding.submissionandroidfundamental.databinding.ActivityFavUserBinding
