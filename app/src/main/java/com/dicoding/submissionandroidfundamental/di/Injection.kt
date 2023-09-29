@@ -7,9 +7,8 @@ import com.dicoding.submissionandroidfundamental.data.remote.retrofit.ApiConfig
 
 object Injection {
     fun provideRespository(context: Context): UserGithubRepository{
-        val apiService = ApiConfig.getApiService()
         val database = UserGithubDatabase.getInstance(context)
         val dao = database.userGithubDao()
-        return UserGithubRepository.getInstance(apiService, dao)
+        return UserGithubRepository.getInstance(dao)
     }
 }

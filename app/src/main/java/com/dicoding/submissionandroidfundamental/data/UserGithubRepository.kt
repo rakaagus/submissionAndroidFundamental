@@ -26,7 +26,6 @@ class UserGithubRepository private constructor(
     companion object{
         private var INSTANCE: UserGithubRepository? = null
         fun getInstance(
-            apiService: ApiService,
             userGithubDao: UserGithubDao
         ): UserGithubRepository =
             INSTANCE ?: synchronized(this){

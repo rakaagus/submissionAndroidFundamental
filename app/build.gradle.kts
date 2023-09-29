@@ -4,7 +4,7 @@ plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
     id("kotlin-parcelize")
-    id("kotlin-kapt")
+    id("com.google.devtools.ksp")
 }
 
 android {
@@ -65,7 +65,7 @@ dependencies {
     implementation("androidx.fragment:fragment-ktx:1.6.1")
     implementation("androidx.activity:activity-ktx:1.7.2")
     implementation("androidx.room:room-runtime:2.6.0-beta01")
-    kapt("androidx.room:room-compiler:2.6.0-beta01")
+    ksp("androidx.room:room-compiler:2.6.0-beta01")
     implementation("androidx.room:room-ktx:2.5.2")
 
     // datastore
